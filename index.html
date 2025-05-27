@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Aliança UPP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Aliança UPP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<audio id="bg-music" loop>
-  <source src="https://www.bensound.com/bensound-music/bensound-energy.mp3" type="audio/mpeg">
+<audio autoplay loop>
+    <source src="matue-333.mp3" type="audio/mpeg">
 </audio>
-<button id="music-control"><i class="fas fa-play"></i> Música</button>
 
 <header>
-  <div class="logo"><i class="fas fa-globe"></i> Aliança UPP</div>
-  <nav>
-    <button id="menu-btn"><i class="fas fa-bars"></i> Menu</button>
-    <div id="menu" class="hidden">
-      <button onclick="abrirListaNegra()"><i class="fas fa-ban"></i> Lista Negra</button>
-      <button onclick="abrirFeedback()"><i class="fas fa-comment-dots"></i> Feedbacks</button>
-      <button onclick="abrirInscricao()"><i class="fas fa-user-edit"></i> Inscrição Conselho</button>
-    </div>
-  </nav>
+    <div class="logo">🌐 Aliança UPP</div>
+    <nav>
+        <button id="menu-btn">☰</button>
+        <div id="menu" class="hidden">
+            <button onclick="abrirListaNegra()">Lista Negra</button>
+            <button onclick="abrirFeedback()">Feedbacks</button>
+            <button onclick="abrirInscricao()">Inscrição Conselho</button>
+        </div>
+    </nav>
 </header>
 
 <section class="slider">
-  <img class="slide" src="https://github.com/user-attachments/assets/d3436e57-d638-4b74-bcb6-002ade44de31" alt="Regra 1">
-  <img class="slide" src="https://github.com/user-attachments/assets/fdefe9a8-7bb3-4a3f-b5ca-ec122295c4b" alt="Regra 2">
-  <img class="slide" src="https://github.com/user-attachments/assets/8ea87328-e454-4cf3-8e60-e5e006100d3c" alt="Regra 3">
-  <img class="slide" src="https://github.com/user-attachments/assets/c783dafe-dcac-4c3c-8614-d4bbee359310" alt="Regra 4">
-  <img class="slide" src="https://github.com/user-attachments/assets/ce2be4ab-9856-45f3-a7ab-01fc4d7dedb1" alt="Regra 5">
-  <img class="slide" src="https://github.com/user-attachments/assets/dddfb75f-d43c-4abd-9fe0-47caf5bd376d" alt="Regra 6">
-  <img class="slide" src="https://github.com/user-attachments/assets/bdba8729-68f7-4f27-ab32-8b633c373a12" alt="Regra 7">
+    <div class="slides">
+        <img src="img/regra1.jpg" alt="Regra 1">
+        <img src="img/regra2.jpg" alt="Regra 2">
+        <img src="img/regra3.jpg" alt="Regra 3">
+        <img src="img/regra4.jpg" alt="Regra 4">
+    </div>
 </section>
 
-<section class="info fade-in">
-  <p>As reuniões da aliança são todas <strong>terças-feiras</strong> a partir das <strong>21h</strong>.  
-  A sala será enviada no grupo da aliança junto com a senha por alguém da gestão.</p>
+<section class="info">
+    <p>Reuniões todas as terças-feiras, às 21h. A sala será enviada no grupo da Aliança com a senha.</p>
 </section>
 
 <section class="buttons">
-  <button class="black-button" onclick="abrirListaNegra()"><i class="fas fa-ban"></i> Lista Negra</button>
-  <button class="black-button" onclick="abrirFeedback()"><i class="fas fa-comment-dots"></i> Feedbacks</button>
+    <button class="black-button" onclick="abrirListaNegra()">Lista Negra</button>
+    <button class="black-button" onclick="abrirFeedback()">Feedbacks</button>
 </section>
 
-<section class="feedback hidden fade-in">
-  <h2><i class="fas fa-comments"></i> Feedbacks</h2>
-  <p>Preencha o formulário clicando <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUmgKNIYcTpfhvT0MtvFrOA3NwWl0OYnETF66209_gTSKwng/viewform" target="_blank">aqui</a>.</p>
+<section class="feedback hidden">
+    <h2>Feedbacks</h2>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUmgKNIYcTpfhvT0MtvFrOA3NwWl0OYnETF66209_gTSKwng/viewform" target="_blank">
+        Preencha o formulário
+    </a>
 </section>
 
-<section class="inscricao hidden fade-in">
-  <h2><i class="fas fa-user-edit"></i> Inscrição para o Conselho</h2>
-  <form>
-    <label>Seu ID?</label><input type="text">
-    <label>Qual nome da sua família?</label><input type="text">
-    <label>Qual seu ponto forte?</label><input type="text">
-    <label>O que é mais importante pra você na WePlay?</label><input type="text">
-    <button type="submit">Enviar Inscrição</button>
-  </form>
+<section class="inscricao hidden">
+    <h2>Inscrição para o Conselho</h2>
+    <form>
+        <label>Seu ID?</label>
+        <input type="text">
+
+        <label>Nome da sua família?</label>
+        <input type="text">
+
+        <label>Seu ponto forte?</label>
+        <input type="text">
+
+        <label>O que é mais importante pra você na WePlay?</label>
+        <input type="text">
+
+        <button type="submit">Enviar</button>
+    </form>
 </section>
 
-<section class="eventos fade-in">
-  <h2><i class="fas fa-calendar-alt"></i> Eventos da Aliança</h2>
-  <form id="foto-form">
-    <input type="text" placeholder="Título do Evento" id="titulo-evento">
-    <input type="file" id="foto-evento">
-    <button type="submit">Postar</button>
-  </form>
-  <div id="galeria"></div>
+<section class="eventos">
+    <h2>Eventos da Aliança</h2>
+    <form id="foto-form">
+        <input type="text" placeholder="Título do Evento" id="titulo-evento">
+        <input type="file" id="foto-evento">
+        <button type="submit">Postar</button>
+    </form>
+    <div id="galeria"></div>
 </section>
 
 <script src="script.js"></script>
